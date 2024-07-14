@@ -51,6 +51,55 @@ Communication Interactions:
 - Connect with like minded gamers through direct messaging or group chats
 - Discuss the details about a game event in the event comment section
 
+---
+
+Log in and Sign up:
+
+- A new user signs up with a username and password
+- An existing user logs in with their preexisting username and password
+
+Navigation:
+
+- Edit Profile
+- Games Owned
+- My Events
+- Event Drafts
+- Discover Events
+- Discover Games
+- Logout
+- NEW EVENT
+
+New Event:
+
+- Search for Game name
+- Date
+- Time
+- Location
+- Duration
+- Description / comments
+- Host
+- Guests
+- Minimum players
+- Maximum players
+- Is event private
+- Publish event
+- Preview Event
+- Save as Draft
+
+Events Page:
+
+- Event Name
+- Hosted by
+- Game Image
+- Date and Time
+- Location
+- Info / About
+- Free Spots
+- Greenlight
+- Edit event (host only)
+- Cancel event (host only)
+- Join Game (guest only)
+
 ## Tech Stack
 
 Core Framework:
