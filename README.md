@@ -20,45 +20,33 @@ The target audience can be broken down further in these categories:
 
 User Profiles:
 
-- Create personalised profiles with game collections, preferences, and play history
-- Easily manage PSVPs and track upcoming game events
-- View personal game night statistics and achievements
+- Create personalised profiles with game collections, preferences
 
-Game Night Creation:
+Game Event Creation:
 
 - Search and select the prerferred game from the BoardGameGeek API
-- Specify gate, time, location, player minimum and maximum count, and skill level
+- Specify game, time, location, player minimum and maximum count
 - Save the game event as a draft before publishing it for viewing
-- Indicate the game is owned and available to use
-- Invite friends or open the event to the wider community
 
-Game Night Discovery:
+Game Event Discovery:
 
-- Browser a currated list of upcoming game events, filtered by game, date, location, skill level, or player count
-- Access detailed event information, including game descriptions, the hosts profile, and attendee list
-- RSVP as 'Going', 'Maybe', 'Can't Go' or mark as interested with a click and communicate with other players through comments
+- Browser a currated list of upcoming game events, filtered by game and date
+- See a brief overview of game names, date and time lcation, host, players going
+- Access detailed event information when clicking into the event
+- RSVP as 'Going', 'Can't go'
 
 Game Collection Management:
 
-- Build a digital library of owned and wishlisted games
-- Mark games as available for games nights
-- Get detailed game information from BoardGameGeek
-
-Communication Interactions:
-
-- Engage in discussions and share recommendations in game-specific comment threads
-- Rate and review games to help others discover new favourite games
-- Connect with like minded gamers through direct messaging or group chats
-- Discuss the details about a game event in the event comment section
+- Build a digital library of owned gamed
+- Click into it to get detailed game information as a link to BoardGameGeek
 
 ---
 
 Log in and Sign up:
-
-- A new user signs up with a username and password
-- An existing user logs in with their preexisting username and password
+New users can regist and prvide a username and password, and returning users can log in using their existing credentials. This grants access to the core features of the app.
 
 Navigation:
+Once logged in, users can navigate to various sections of the app through the navigation menu. They can edit their profile, maange their owned games, view their upcoming and
 
 - Edit Profile
 - Games Owned
@@ -120,18 +108,29 @@ Frontend Development:
   - HTML5
   - CSS3
   - JavaScript
+  - XML
 - Library / Framework:
   - React.js
   - React Router
+  - react-calendar
+  - xml2js
 
 Backend Development:
 
 - Runtime:
   - Node.js
+  - Nodemon
 - Framework:
   - Express.js
+- Data Formats:
+  - JSON
+  - XML
 - Database Interaction:
   - Mongoose
+  - Axios
+  - bcryptjs
+  - JWT
+  - dotenv
 
 Deployment:
 
@@ -147,8 +146,9 @@ DevOps and Version Control:
 Testing:
 
 - Bruno
-- Cypress
+- Jest
 - Mocha
+- Cypress
 
 Planning and Management:
 
