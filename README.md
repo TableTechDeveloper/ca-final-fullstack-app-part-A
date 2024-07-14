@@ -4,7 +4,7 @@
 
 Game Plan simplifies and streamlines the the process of organising board game events.
 
-The purpose of the app is to empower board game hobbyists to connect, discover, host and join game events within their local comminities, with a focus on streamlining the event creation process. The app aims to make make it effortless to be a part of these events while removing the typical barriers of scheduling conflicts and logistical challeneges. For example, a game must meet within the minimim and maximum player limitation, someone must own the board game, there but be a viable hosting location in order to be played.
+The purpose of the app is to empower board game hobbyists to connect, discover, host and join game events within their local communities, with a focus on streamlining the event creation process. The app aims to make make it effortless to be a part of these events while removing the typical barriers of scheduling conflicts and logistical challeneges. For example, a game must meet within the minimim and maximum player limitation, someone must own the board game, there but be a viable hosting location in order to be played.
 
 ## Target Audience
 
@@ -46,7 +46,24 @@ Log in and Sign up:
 New users can regist and prvide a username and password, and returning users can log in using their existing credentials. This grants access to the core features of the app.
 
 Navigation:
-Once logged in, users can navigate to various sections of the app through the navigation menu. They can edit their profile, maange their owned games, view their upcoming and
+Once logged in, users can navigate to various sections of the app through the navigation menu. They can edit their profile, manage their owned games, view their upcoming event, access drafts of events they are creating, discover new events to join, explore games to add to library, and log out when finished. The prominent 'New Event' button allows users to become a host by initiating the event creation process.
+
+User Profile:
+
+Owned Games:
+
+Upcoming Events:
+
+Event Drafts:
+
+Discover Events:
+
+Discover Games:
+
+New Event Creation:
+The event creation flow is designed to be straightforward. The user selects the 'New Event' button on the navigation menu which allows them to become a host and initiate creating an event. The host is met with a form with criteria to fill out in order to satisfy the event requirements. A host begins by searching for a game by name and then selecting their desired result from a list pulled from BoardGameGeek API. Next, they set the date, time, and duration utilising react-calendar. The location is set as a simple string. A description section allows the host to provide additonal details for attendees to see. The minimum and maximum player limits for a game is automatically input when the game is selected from the BoardGameGeek API. There is a toggle to set the event as a private event which cannot be searched for in discover, and instead only found via a link. The 'Submit' button makes the event visible to others, while the 'Preview Event' allows the host to review th event details before finalising. 'Save as Draft' provides the flexibility to return to the event creation process later.
+
+Event Page:
 
 - Edit Profile
 - Games Owned
@@ -64,7 +81,7 @@ New Event:
 - Time
 - Location
 - Duration
-- Description / comments
+- Description
 - Host
 - Guests
 - Minimum players
