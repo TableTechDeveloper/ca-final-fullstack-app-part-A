@@ -181,9 +181,72 @@ Design and Prototyping:
 
 ## User Stories
 
+- As a non-user, I want to be able to register as a user, so that I can perform user operations
+- As a user, I want to be able to login to my profile, so I can see my collection and join events
+- As a user, I want to be able to create a new event, so I can share this with other users to join
+- As a host, I want to be able to share an event link to other users, so they can join my event
+- As a user, I want to search for events, so that I can join.
+- As a host, I want to be able to edit or delete my event, so that the details are changed
+- As a user, I want to be able to search for boardgames, so that I can add these to my collection
+-
+
 ## Wireframes
 
 ## Planning
 
-Trello screenshots
-Miro screenshots
+Utilising Agile Methodologies, we have broken down the project as follows:
+
+### Epics:
+
+- Account Management: User registration, login, and logout functionality
+- Navigation: Menu and navigation elements for the platform
+- User Profile Management: Viewing and editing basic user profile information
+- Game Discovery: Browsing, seraching, and viewing details about board games
+- Game Collection Management: Managing a personal collection of owned board games
+- Event Participation: Joining, leaving, and viewing events.
+- Event Creation and Management: Covers event creation, sharing, editing, deletion, and searching
+
+### Initiatives:
+
+- Launch MVP: The overcharing initiative is to release the Minimum Viable Product (MVP) with core functionality.
+
+### Agile User Stories:
+
+#### Epic: Account Management
+
+- Story 1: As a non-user, I want to register for an account by providing my email and password, so that I can access the platform's features
+- Story 2: As a logged-out user, I want to log in with my email and password, so that I can access my profile and content
+- Story 3: As a user, I want to be able to log out from my account
+- Story 4: As a user, I want to be able to change my password after logging in
+- Story 5: As a logged-out user, I want to initiate a password reset process by providing my email address if I forget my password
+
+### Epic: Navigation
+
+- Story 6: As a user, I want to see a navigation menu that allows me to access the follwoing sections:
+  - Edit Profile
+  - Owned Games
+  - My Events
+  - Event Drafts
+  - Discover Events
+  - Discover Games
+  - Logout
+  - NEW EVENT
+
+### Epic: User Profile Management
+
+- Story 7: As a user, I want to view my profile page, which displays my username, location, and bio
+- Story 8: As a user, I want to edit my profile information, such as my username, location, and bio
+
+### Epic: Game Discovery
+
+- Story 9: As a user, I want to browse the through the Discover Games page, which lists all avilable board games
+- Story 10: As a user, I want to serach for games in the library by name
+- Story 11: As a user, I want to view detail information about a game when clicking on it, including a link to BoardGameGeek
+
+### Epic: Game Collection Management
+
+- Story 12: As a user, I want to add board games to my 'Owned Games' collection from the serach results in the 'Discover Games' page
+- Story 13: As a user, I want to view my 'Owned Games' collection, which lists all the board games I have added
+- Story 14: As a user, I want to click on a game in my
+  Trello screenshots
+  Miro screenshots
