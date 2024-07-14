@@ -166,6 +166,8 @@ Design and Prototyping:
 
 ## Wireframes
 
+adding info about wireframes in here!!!
+
 ## Planning
 
 Trello screenshots
