@@ -179,6 +179,18 @@ Design and Prototyping:
 - Figma
 - Miro
 
+## Application Architechure Diagram
+![an image of the application architecutre for this project](/docs/app_architecture/Architecture_Diagram.png)
+
+1. User interacts with the application via web browser. Browser will display a webpage
+2. React front-end framework handling user interface. Sends API requests to the server and receives JSON responses
+3. Express Node.js back-end framework recieves API requests from React front-end, processes and sends JSON responses
+4. JWT Service as part of express server handles user authentication and authorisation. Generates JWT tokens for user
+5. Externally hosted API providing boardgame data when presented with valid url path requested by the server.
+Responds with XML data
+6. Database stores user data, events and board game collections.
+CRUD operations and queries performed by the server
+
 ## User Stories
 
 - As a non-user, I want to be able to register as a user, so that I can perform user operations
