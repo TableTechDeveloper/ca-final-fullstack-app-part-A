@@ -203,6 +203,8 @@ Design and Prototyping:
 
 ## User Stories
 
+A simple version user stories:
+
 - As a non-user, I want to be able to register as a user, so that I can perform user operations
 - As a user, I want to be able to login to my profile, so I can see my collection and join events
 - As a user, I want to be able to create a new event, so I can share this with other users to join
@@ -210,7 +212,88 @@ Design and Prototyping:
 - As a user, I want to search for events, so that I can join.
 - As a host, I want to be able to edit or delete my event, so that the details are changed
 - As a user, I want to be able to search for boardgames, so that I can add these to my collection
--
+- As a user, I want to be able to leave the event, so that it can be removed from my event list
+
+Utilising Agile Methodologies, we have broken down the project further as follows:
+
+### Epics:
+
+- Account Management: User registration, login, and logout functionality
+- Navigation: Menu and navigation elements for the platform
+- User Profile Management: Viewing and editing basic user profile information
+- Game Discovery: Browsing, seraching, and viewing details about board games
+- Game Collection Management: Managing a personal collection of owned board games
+- Event Participation: Joining, leaving, and viewing events.
+- Event Creation and Management: Covers event creation, sharing, editing, deletion, and searching
+
+### Initiatives:
+
+- Launch MVP: The overcharing initiative is to release the Minimum Viable Product (MVP) with core functionality.
+
+### Agile User Stories:
+
+#### Epic: Account Management
+
+- Story 1: As a non-user, I want to register for an account by providing my email and password, so that I can access the platform's features
+- Story 2: As a logged-out user, I want to log in with my email and password, so that I can access my profile and content
+- Story 3: As a user, I want to be able to log out from my account
+- Story 4: As a user, I want to be able to change my password after logging in
+- Story 5: As a logged-out user, I want to initiate a password reset process by providing my email address if I forget my password
+
+#### Epic: Navigation
+
+- Story 6: As a user, I want to see a navigation menu that allows me to access the follwoing sections:
+  - Edit Profile
+  - Owned Games
+  - My Events
+  - Event Drafts
+  - Discover Events
+  - Discover Games
+  - Logout
+  - NEW EVENT
+
+#### Epic: User Profile Management
+
+- Story 7: As a user, I want to view my profile page, which displays my username, location, and bio
+- Story 8: As a user, I want to edit my profile information, such as my username, location, and bio
+
+#### Epic: Game Discovery
+
+- Story 9: As a user, I want to browse the through the Discover Games page, which lists all avilable board games
+- Story 10: As a user, I want to serach for games in the library by name
+- Story 11: As a user, I want to view detail information about a game when clicking on it, including a link to BoardGameGeek
+
+#### Epic: Game Collection Management
+
+- Story 12: As a user, I want to add board games to my 'Owned Games' collection from the serach results in the 'Discover Games' page
+- Story 13: As a user, I want to view my 'Owned Games' collection, which lists all the board games I have added
+- Story 14: As a user, I want to click on a game in my 'Owned Games' collection to view detailed information from BoardGameGeek
+- Story 15: As a user, I want to remove a board game from my 'Own Games'
+
+#### Epic: Event Participation
+
+- Story 16: As a user, I want to view the 'My Events' section, which displays all the events I am attending or hosting, including upcoming events and drafts of events I am creating
+- Story 17: As a user, I want to browse a curated list of upcoming game events, filtered by game and date
+- Story 18: As a user, I want to view a preview of limited information about an event, including the game, date, and time
+- Story 19: As a user, I want to view detailed information about an event, including the game, date, time, location, duration, host, players attending, private status, description, and capacity status
+- Story 20: As a user, I want to RSVP to an event as 'Going'
+- Story 21: As a user, I want to join an event by clicking on the event link or finding it thorugh search
+- Story 22: As a user, I want to leave an event that I previously joined with a 'Leave Event' button
+- Story 23: As a user, I only want to be able to join an event if the maximum player limit is not reached indicated by the capacity status icon
+
+#### Epic: Even Creation and Management
+
+- Story 24: As a user, I want to become a host and create a new event using the 'New Event' form which I will get to by either selecting 'New Event' in the navigation menu or by clicking a button called 'Create New Event' at the top of page in 'My Events'
+- Story 25: As a host using the 'New Event' form, I want to add a game in the 'Game Name' section by clicking the field, searching and selecting the preferred game from my 'Owned Games'
+- Story 26: As a host using the 'New Event' form with a game input to 'Game Name', I want the duration and minimum-maximum fields to auto fill in based on the BoardGameGeek API data on that game
+- Story 27: As a host, I want to specify the date, time, location, private status, and description for my event and also override the auto-filled duration and minimum-maximum player fields
+- Story 28: As a host, I want to save the game event as a draft before publishing it for viewing using the 'Save As Draft' button
+- Story 29: As a host, I want to preview the game event using the 'Preview Event' button before publishing
+- Story 30: As a host, I want to generate a unique link for my event published event, so that I can easily share it with others
+- Story 31: As a host, I want to edit the details of my event, inlcuding date, time, duration location, private status, minimum-maximum players, and description
+- Story 32: As a host, I want to be able to cancel my event
+- Story 33: As a host, I only want my event to go ahead if it meets the minimum player requirement as per the capacity status icon
+- Story 34: As a host, I don't want anyone else to be able to join my event if the maximum player capacity is reached
 
 ## Wireframes
 
@@ -275,89 +358,22 @@ Single event page. Guest and host views:
 
 ![image](./docs/wireframes/desktop-06-event.jpg)
 
-
-
 ## Planning
 
-## Agile
+![planning-initial-scope](/docs/planning/miro-initial-scoping.png)
 
-Utilising Agile Methodologies, we have broken down the project as follows:
+![planning-mvp-voting](/docs/planning/miro-mvp-voting.png)
 
-### Epics:
+![planning-user-stories-01](/docs/planning/miro-user-stories-01.png)
 
-- Account Management: User registration, login, and logout functionality
-- Navigation: Menu and navigation elements for the platform
-- User Profile Management: Viewing and editing basic user profile information
-- Game Discovery: Browsing, seraching, and viewing details about board games
-- Game Collection Management: Managing a personal collection of owned board games
-- Event Participation: Joining, leaving, and viewing events.
-- Event Creation and Management: Covers event creation, sharing, editing, deletion, and searching
+![planning-ui-sketching](/docs/planning/miro-event-ui-sketching.png)
 
-### Initiatives:
+![planning-wireframe-drafts](/docs/planning/miro-wireframe-drafts.png)
 
-- Launch MVP: The overcharing initiative is to release the Minimum Viable Product (MVP) with core functionality.
+![planning-trello-01](/docs/planning/trello-01.png)
 
-### Agile User Stories:
+![planning-trello-02](/docs/planning/trello-02.png)
 
-#### Epic: Account Management
+![planning-trello-03](/docs/planning/trello-03.png)
 
-- Story 1: As a non-user, I want to register for an account by providing my email and password, so that I can access the platform's features
-- Story 2: As a logged-out user, I want to log in with my email and password, so that I can access my profile and content
-- Story 3: As a user, I want to be able to log out from my account
-- Story 4: As a user, I want to be able to change my password after logging in
-- Story 5: As a logged-out user, I want to initiate a password reset process by providing my email address if I forget my password
-
-### Epic: Navigation
-
-- Story 6: As a user, I want to see a navigation menu that allows me to access the follwoing sections:
-  - Edit Profile
-  - Owned Games
-  - My Events
-  - Event Drafts
-  - Discover Events
-  - Discover Games
-  - Logout
-  - NEW EVENT
-
-### Epic: User Profile Management
-
-- Story 7: As a user, I want to view my profile page, which displays my username, location, and bio
-- Story 8: As a user, I want to edit my profile information, such as my username, location, and bio
-
-### Epic: Game Discovery
-
-- Story 9: As a user, I want to browse the through the Discover Games page, which lists all avilable board games
-- Story 10: As a user, I want to serach for games in the library by name
-- Story 11: As a user, I want to view detail information about a game when clicking on it, including a link to BoardGameGeek
-
-### Epic: Game Collection Management
-
-- Story 12: As a user, I want to add board games to my 'Owned Games' collection from the serach results in the 'Discover Games' page
-- Story 13: As a user, I want to view my 'Owned Games' collection, which lists all the board games I have added
-- Story 14: As a user, I want to click on a game in my 'Owned Games' collection to view detailed information from BoardGameGeek
-- Story 15: As a user, I want to remove a board game from my 'Own Games'
-
-### Epic: Event Participation
-
-- Story 16: As a user, I want to view the 'My Events' section, which displays all the events I am attending or hosting, including upcoming events and drafts of events I am creating
-- Story 17: As a user, I want to browse a curated list of upcoming game events, filtered by game and date
-- Story 18: As a user, I want to view a preview of limited information about an event, including the game, date, and time
-- Story 19: As a user, I want to view detailed information about an event, including the game, date, time, location, duration, host, players attending, private status, description, and capacity status
-- Story 20: As a user, I want to RSVP to an event as 'Going'
-- Story 21: As a user, I want to join an event by clicking on the event link or finding it thorugh search
-- Story 22: As a user, I want to leave an event that I previously joined with a 'Leave Event' button
-- Story 23: As a user, I only want to be able to join an event if the maximum player limit is not reached indicated by the capacity status icon
-
-### Epic: Even Creation and Management
-
-- Story 24: As a user, I want to become a host and create a new event using the 'New Event' form which I will get to by either selecting 'New Event' in the navigation menu or by clicking a button called 'Create New Event' at the top of page in 'My Events'
-- Story 25: As a host using the 'New Event' form, I want to add a game in the 'Game Name' section by clicking the field, searching and selecting the preferred game from my 'Owned Games'
-- Story 26: As a host using the 'New Event' form with a game input to 'Game Name', I want the duration and minimum-maximum fields to auto fill in based on the BoardGameGeek API data on that game
-- Story 27: As a host, I want to specify the date, time, location, private status, and description for my event and also override the auto-filled duration and minimum-maximum player fields
-- Story 28: As a host, I want to save the game event as a draft before publishing it for viewing using the 'Save As Draft' button
-- Story 29: As a host, I want to preview the game event using the 'Preview Event' button before publishing
-- Story 30: As a host, I want to generate a unique link for my event published event, so that I can easily share it with others
-- Story 31: As a host, I want to edit the details of my event, inlcuding date, time, duration location, private status, minimum-maximum players, and description
-- Story 32: As a host, I want to be able to cancel my event
-- Story 33: As a host, I only want my event to go ahead if it meets the minimum player requirement as per the capacity status icon
-- Story 34: As a host, I don't want anyone else to be able to join my event if the maximum player capacity is reached
+![planning-figma-01](/docs/planning/figma-01.png)
