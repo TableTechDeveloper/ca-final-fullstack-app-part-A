@@ -234,7 +234,68 @@ CRUD operations and queries performed by the server
 
 ## Wireframes
 
-adding info about wireframes in here!!!
+Wireframes have been planned in mobile (360px wide), tablet (744px wide), and desktop (1280px wide) sizes. The max page width content width for any larger screen sizes will be limited to 1280px.
+
+### Sitemap
+
+This image gives an overview of the entire site and the navigation / links between pages.
+![image](./docs/wireframes/sitemap.jpg)
+
+### Mobile Wireframes
+
+Notes have been added to the mobile views only. Table and desktop views are un-annotated.
+
+Home page and login popups:
+
+![image](./docs/wireframes/01-login.jpg)
+
+Profile setup and editing:
+
+![image](./docs/wireframes/02-profile.jpg)
+
+Dashboard and nav-menu:
+
+![image](./docs/wireframes/03-dashboard.jpg)
+
+Games owned and games search
+
+![image](./docs/wireframes/04-games.jpg)
+
+Events, event drafts, new event, and uplcoming events:
+
+![image](./docs/wireframes/05-events.jpg)
+
+Single event page. Guest and host views:
+
+![image](./docs/wireframes/06-event.jpg)
+
+### Tablet Wireframes
+
+![image](./docs/wireframes/tablet-01-login.jpg)
+
+![image](./docs/wireframes/tablet-02-profile.jpg)
+
+![image](./docs/wireframes/tablet-03-games.jpg)
+
+![image](./docs/wireframes/tablet-04-events.jpg)
+
+![image](./docs/wireframes/tablet-05-event.jpg)
+
+### Desktop Wireframes
+
+![image](./docs/wireframes/desktop-01-login.jpg)
+
+![image](./docs/wireframes/desktop-02-profile.jpg)
+
+![image](./docs/wireframes/desktop-03-games.jpg)
+
+![image](./docs/wireframes/desktop-04-myevents.jpg)
+
+![image](./docs/wireframes/desktop-05-events.jpg)
+
+![image](./docs/wireframes/desktop-06-event.jpg)
+
+
 
 ## Planning
 
