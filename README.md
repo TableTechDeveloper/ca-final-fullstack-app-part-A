@@ -24,7 +24,7 @@ User Profiles:
 
 Game Event Creation:
 
-- Search and select the prerferred game from the BoardGameGeek API
+- Search and select the preferred game from the BoardGameGeek API
 - Specify game, time, location, player minimum and maximum count
 - Save the game event as a draft before publishing it for viewing
 
@@ -33,35 +33,12 @@ Game Event Discovery:
 - Browser a currated list of upcoming game events, filtered by game and date
 - See a brief overview of game names, date and time lcation, host, players going
 - Access detailed event information when clicking into the event
-- RSVP as 'Going', 'Can't go'
+- RSVP as 'Going', 'Leave Event'
 
 Game Collection Management:
 
 - Build a digital library of owned gamed
 - Click into it to get detailed game information as a link to BoardGameGeek
-
----
-
-Log in and Sign up:
-New users can regist and prvide a username and password, and returning users can log in using their existing credentials. This grants access to the core features of the app.
-
-Navigation:
-Once logged in, users can navigate to various sections of the app through the navigation menu. They can edit their profile, manage their owned games, view their upcoming event, access drafts of events they are creating, discover new events to join, explore games to add to library, and log out when finished. The prominent 'New Event' button allows users to become a host by initiating the event creation process.
-
-User Profile:
-
-Owned Games:
-
-Upcoming Events:
-
-Event Drafts:
-
-Discover Events:
-
-Discover Games:
-
-New Event Creation:
-The event creation flow is designed to be straightforward. The user selects the 'New Event' button on the navigation menu which allows them to become a host and initiate creating an event. The host is met with a form with criteria to fill out in order to satisfy the event requirements. A host begins by searching for a game by name and then selecting their desired result from a list pulled from BoardGameGeek API. Next, they set the date, time, and duration utilising react-calendar. The location is set as a simple string. A description section allows the host to provide additonal details for attendees to see. The minimum and maximum player limits for a game is automatically input when the game is selected from the BoardGameGeek API. There is a toggle to set the event as a private event which cannot be searched for in discover, and instead only found via a link. The 'Submit' button makes the event visible to others, while the 'Preview Event' allows the host to review th event details before finalising. 'Save as Draft' provides the flexibility to return to the event creation process later.
 
 Event Page:
 
@@ -76,7 +53,7 @@ Event Page:
 
 New Event:
 
-- Search for Game name
+- Search for Game Name
 - Date
 - Time
 - Location
@@ -96,11 +73,12 @@ Events Page:
 - Event Name
 - Hosted by
 - Game Image
-- Date and Time
+- Date
+- Time
+- Duration
 - Location
-- Info / About
-- Free Spots
-- Greenlight
+- Description
+- Capacity
 - Edit event (host only)
 - Cancel event (host only)
 - Join Game (guest only)
@@ -180,6 +158,7 @@ Design and Prototyping:
 - Miro
 
 ## Application Architechure Diagram
+
 ![an image of the application architecutre for this project](/docs/app_architecture/Architecture_Diagram.png)
 
 1. User interacts with the application via web browser. Browser will display a webpage
@@ -187,39 +166,40 @@ Design and Prototyping:
 3. Express Node.js back-end framework recieves API requests from React front-end, processes and sends JSON responses
 4. JWT Service as part of express server handles user authentication and authorisation. Generates JWT tokens for user
 5. Externally hosted API providing boardgame data when presented with valid url path requested by the server.
-Responds with XML data
+   Responds with XML data
 6. Database stores user data, events and board game collections.
-CRUD operations and queries performed by the server
+   CRUD operations and queries performed by the server
 
 ## Dataflow Diagram
+
 ![an overall image of the Dataflow Diagram for the entire app](/docs/data_flow_diagrams/Overall.png)
 
 #### Individual Dataflows:
-1. User Registration  
-![a dataflow diagram for a user registering for an accont in the app](/docs/data_flow_diagrams/Registration.png)
-2. User Login  
-![a dataflow diagram for a user loging in to their accont in the app](/docs/data_flow_diagrams/Login.png)
-3. View Games in users collection  
-![a dataflow diagram for a user viewing the games they have added in their collection](/docs/data_flow_diagrams/View_Games.png)
-4. User joins an event  
-![a dataflow diagram for a user joining an event](/docs/data_flow_diagrams/Join_Event.png)
-5. User creates an event  
-![a dataflow diagram for a user creating an event](/docs/data_flow_diagrams/Create_Event.png)
-6. User views their booked events  
-![a dataflow diagram for a user viewing their booked events](/docs/data_flow_diagrams/View_Booked_Events.png)
-7. User searches for public events  
-![a dataflow diagram for a user searching for publicly listed events](/docs/data_flow_diagrams/Search_Events.png)
-8. Host user edits an event  
-![a dataflow diagram for a host user editing a created event](/docs/data_flow_diagrams/Edit_Event.png)
-8. Host user deletes an event  
-![a dataflow diagram for a host user deleting a created event](/docs/data_flow_diagrams/Delete_Event.png)
-9. User searches for a boardgame to add to collection  
-![a dataflow diagram for a user searching for a boardgame](/docs/data_flow_diagrams/Search_Games.png)
-10. User adds a boardgame to collection  
-![a dataflow diagram for a user adding a boardgame to their collection](/docs/data_flow_diagrams/Add_Game.png)
-11. User leaves an event where they are not the host  
-![a dataflow diagram for a user leaving an event that they are not the host of](/docs/data_flow_diagrams/Leave_Event.png)
 
+1. User Registration  
+   ![a dataflow diagram for a user registering for an accont in the app](/docs/data_flow_diagrams/Registration.png)
+2. User Login  
+   ![a dataflow diagram for a user loging in to their accont in the app](/docs/data_flow_diagrams/Login.png)
+3. View Games in users collection  
+   ![a dataflow diagram for a user viewing the games they have added in their collection](/docs/data_flow_diagrams/View_Games.png)
+4. User joins an event  
+   ![a dataflow diagram for a user joining an event](/docs/data_flow_diagrams/Join_Event.png)
+5. User creates an event  
+   ![a dataflow diagram for a user creating an event](/docs/data_flow_diagrams/Create_Event.png)
+6. User views their booked events  
+   ![a dataflow diagram for a user viewing their booked events](/docs/data_flow_diagrams/View_Booked_Events.png)
+7. User searches for public events  
+   ![a dataflow diagram for a user searching for publicly listed events](/docs/data_flow_diagrams/Search_Events.png)
+8. Host user edits an event  
+   ![a dataflow diagram for a host user editing a created event](/docs/data_flow_diagrams/Edit_Event.png)
+9. Host user deletes an event  
+   ![a dataflow diagram for a host user deleting a created event](/docs/data_flow_diagrams/Delete_Event.png)
+10. User searches for a boardgame to add to collection  
+    ![a dataflow diagram for a user searching for a boardgame](/docs/data_flow_diagrams/Search_Games.png)
+11. User adds a boardgame to collection  
+    ![a dataflow diagram for a user adding a boardgame to their collection](/docs/data_flow_diagrams/Add_Game.png)
+12. User leaves an event where they are not the host  
+    ![a dataflow diagram for a user leaving an event that they are not the host of](/docs/data_flow_diagrams/Leave_Event.png)
 
 ## User Stories
 
@@ -235,6 +215,8 @@ CRUD operations and queries performed by the server
 ## Wireframes
 
 ## Planning
+
+## Agile
 
 Utilising Agile Methodologies, we have broken down the project as follows:
 
@@ -289,6 +271,30 @@ Utilising Agile Methodologies, we have broken down the project as follows:
 
 - Story 12: As a user, I want to add board games to my 'Owned Games' collection from the serach results in the 'Discover Games' page
 - Story 13: As a user, I want to view my 'Owned Games' collection, which lists all the board games I have added
-- Story 14: As a user, I want to click on a game in my
-  Trello screenshots
-  Miro screenshots
+- Story 14: As a user, I want to click on a game in my 'Owned Games' collection to view detailed information from BoardGameGeek
+- Story 15: As a user, I want to remove a board game from my 'Own Games'
+
+### Epic: Event Participation
+
+- Story 16: As a user, I want to view the 'My Events' section, which displays all the events I am attending or hosting, including upcoming events and drafts of events I am creating
+- Story 17: As a user, I want to browse a curated list of upcoming game events, filtered by game and date
+- Story 18: As a user, I want to view a preview of limited information about an event, including the game, date, and time
+- Story 19: As a user, I want to view detailed information about an event, including the game, date, time, location, duration, host, players attending, private status, description, and capacity status
+- Story 20: As a user, I want to RSVP to an event as 'Going'
+- Story 21: As a user, I want to join an event by clicking on the event link or finding it thorugh search
+- Story 22: As a user, I want to leave an event that I previously joined with a 'Leave Event' button
+- Story 23: As a user, I only want to be able to join an event if the maximum player limit is not reached indicated by the capacity status icon
+
+### Epic: Even Creation and Management
+
+- Story 24: As a user, I want to become a host and create a new event using the 'New Event' form which I will get to by either selecting 'New Event' in the navigation menu or by clicking a button called 'Create New Event' at the top of page in 'My Events'
+- Story 25: As a host using the 'New Event' form, I want to add a game in the 'Game Name' section by clicking the field, searching and selecting the preferred game from my 'Owned Games'
+- Story 26: As a host using the 'New Event' form with a game input to 'Game Name', I want the duration and minimum-maximum fields to auto fill in based on the BoardGameGeek API data on that game
+- Story 27: As a host, I want to specify the date, time, location, private status, and description for my event and also override the auto-filled duration and minimum-maximum player fields
+- Story 28: As a host, I want to save the game event as a draft before publishing it for viewing using the 'Save As Draft' button
+- Story 29: As a host, I want to preview the game event using the 'Preview Event' button before publishing
+- Story 30: As a host, I want to generate a unique link for my event published event, so that I can easily share it with others
+- Story 31: As a host, I want to edit the details of my event, inlcuding date, time, duration location, private status, minimum-maximum players, and description
+- Story 32: As a host, I want to be able to cancel my event
+- Story 33: As a host, I only want my event to go ahead if it meets the minimum player requirement as per the capacity status icon
+- Story 34: As a host, I don't want anyone else to be able to join my event if the maximum player capacity is reached
