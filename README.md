@@ -159,7 +159,7 @@ Design and Prototyping:
 
 ## Application Architechure Diagram
 
-![an image of the application architecutre for this project](/docs/app_architecture/Architecture_Diagram.png)
+![an image of the application architecutre for this project](./docs/app_architecture/Architecture_Diagram.png)
 
 1. User interacts with the application via web browser. Browser will display a webpage
 2. React front-end framework handling user interface. Sends API requests to the server and receives JSON responses
@@ -172,34 +172,34 @@ Design and Prototyping:
 
 ## Dataflow Diagram
 
-![an overall image of the Dataflow Diagram for the entire app](/docs/data_flow_diagrams/Overall.png)
+![an overall image of the Dataflow Diagram for the entire app](./docs/data_flow_diagrams/Overall.png)
 
 #### Individual Dataflows:
 
 1. User Registration  
-   ![a dataflow diagram for a user registering for an accont in the app](/docs/data_flow_diagrams/Registration.png)
+   ![a dataflow diagram for a user registering for an accont in the app](./docs/data_flow_diagrams/Registration.png)
 2. User Login  
-   ![a dataflow diagram for a user loging in to their accont in the app](/docs/data_flow_diagrams/Login.png)
+   ![a dataflow diagram for a user loging in to their accont in the app](./docs/data_flow_diagrams/Login.png)
 3. View Games in users collection  
-   ![a dataflow diagram for a user viewing the games they have added in their collection](/docs/data_flow_diagrams/View_Games.png)
+   ![a dataflow diagram for a user viewing the games they have added in their collection](./docs/data_flow_diagrams/View_Games.png)
 4. User joins an event  
-   ![a dataflow diagram for a user joining an event](/docs/data_flow_diagrams/Join_Event.png)
+   ![a dataflow diagram for a user joining an event](./docs/data_flow_diagrams/Join_Event.png)
 5. User creates an event  
-   ![a dataflow diagram for a user creating an event](/docs/data_flow_diagrams/Create_Event.png)
+   ![a dataflow diagram for a user creating an event](./docs/data_flow_diagrams/Create_Event.png)
 6. User views their booked events  
-   ![a dataflow diagram for a user viewing their booked events](/docs/data_flow_diagrams/View_Booked_Events.png)
+   ![a dataflow diagram for a user viewing their booked events](./docs/data_flow_diagrams/View_Booked_Events.png)
 7. User searches for public events  
-   ![a dataflow diagram for a user searching for publicly listed events](/docs/data_flow_diagrams/Search_Events.png)
+   ![a dataflow diagram for a user searching for publicly listed events](./docs/data_flow_diagrams/Search_Events.png)
 8. Host user edits an event  
-   ![a dataflow diagram for a host user editing a created event](/docs/data_flow_diagrams/Edit_Event.png)
+   ![a dataflow diagram for a host user editing a created event](./docs/data_flow_diagrams/Edit_Event.png)
 9. Host user deletes an event  
-   ![a dataflow diagram for a host user deleting a created event](/docs/data_flow_diagrams/Delete_Event.png)
+   ![a dataflow diagram for a host user deleting a created event](./docs/data_flow_diagrams/Delete_Event.png)
 10. User searches for a boardgame to add to collection  
-    ![a dataflow diagram for a user searching for a boardgame](/docs/data_flow_diagrams/Search_Games.png)
+    ![a dataflow diagram for a user searching for a boardgame](./docs/data_flow_diagrams/Search_Games.png)
 11. User adds a boardgame to collection  
-    ![a dataflow diagram for a user adding a boardgame to their collection](/docs/data_flow_diagrams/Add_Game.png)
+    ![a dataflow diagram for a user adding a boardgame to their collection](./docs/data_flow_diagrams/Add_Game.png)
 12. User leaves an event where they are not the host  
-    ![a dataflow diagram for a user leaving an event that they are not the host of](/docs/data_flow_diagrams/Leave_Event.png)
+    ![a dataflow diagram for a user leaving an event that they are not the host of](./docs/data_flow_diagrams/Leave_Event.png)
 
 ## User Stories
 
@@ -465,20 +465,20 @@ Single event page. Guest and host views:
 
 ## Planning
 
-![planning-initial-scope](/docs/planning/miro-initial-scoping.png)
+![planning-initial-scope](./docs/planning/miro-initial-scoping.png)
 
-![planning-mvp-voting](/docs/planning/miro-mvp-voting.png)
+![planning-mvp-voting](./docs/planning/miro-mvp-voting.png)
 
-![planning-user-stories-01](/docs/planning/miro-user-stories-01.png)
+![planning-user-stories-01](./docs/planning/miro-user-stories-01.png)
 
-![planning-ui-sketching](/docs/planning/miro-event-ui-sketching.png)
+![planning-ui-sketching](./docs/planning/miro-event-ui-sketching.png)
 
-![planning-wireframe-drafts](/docs/planning/miro-wireframe-drafts.png)
+![planning-wireframe-drafts](./docs/planning/miro-wireframe-drafts.png)
 
-![planning-trello-01](/docs/planning/trello-01.png)
+![planning-trello-01](./docs/planning/trello-01.png)
 
-![planning-trello-02](/docs/planning/trello-02.png)
+![planning-trello-02](./docs/planning/trello-02.png)
 
-![planning-trello-03](/docs/planning/trello-03.png)
+![planning-trello-03](./docs/planning/trello-03.png)
 
-![planning-figma-01](/docs/planning/figma-01.png)
+![planning-figma-01](./docs/planning/figma-01.png)
